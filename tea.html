@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Time for some tea</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: #044a42;
+            padding: 20px 5px;
+            border: 1px solid;
+            border-radius: 30px;
+            margin: 5px 10px 5px 10px;
+        }
+
+
+        h2 {
+            text-align: center;
+            color: #044a42;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: 400;
+            color: #236969;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 0 15px;
+            color: #044a42;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            display: inline-flex;
+            justify-content: center;
+            border: 1px solid white;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .images {
+            margin: auto;
+            max-width: 914px;
+        }
+
+        .health {
+            color: #044a42;
+        }
+
+        .free {
+            color: #044a42;
+        }
+
+        .good {
+            color: #044a42;
+        }
+
+        .learn {
+            color: #044a42;
+            font-weight: bold;
+        }
+
+        p {
+            padding: 15px 30px;
+            border: 1px solid;
+            border-radius: 30px;
+            box-shadow: #bae2be;
+            margin: 5px 10px 5px 10px;
+            color: #044a42;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: 200ms ease-in-out;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            background: #bae2be;
+            color: #044a42;
+            font-size: 25px;
+            padding: 20px;
+            border: #33484d;
+            border: 30px;
+            border-radius: 10px;
+            transition: 200ms;
+            line-height: normal;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: #c4ffdd;
+            color: #044a42;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Time for some tea ☕️
+    </h1>
+    <h2>
+        What is your favourite type of tea?
+    </h2>
+    <ul>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Green_tea" target="_blank" class="free">
+                Green Tea
+            </a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Herbal_tea" target="_blank" class="health">
+                Herbal Tea
+            </a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/White_tea" target="_blank" class="good">
+                White Tea
+            </a>
+        </li>
+    </ul>
+    <div class="images">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/919/original/green-tea-wight-loss-1643990040.jpg?1654028634"
+            alt="green tea" />
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/920/original/Screen_Shot_2022-05-31_at_3.24.40_PM.png?1654028703"
+            alt="herbal tea" />
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/921/original/Screen_Shot_2022-05-31_at_3.25.23_PM.png?1654028735"
+            alt="white tea" />
+    </div>
+    <p>
+        Throughout history, many people around the world have enjoyed drinking tea for thousands of years, because it is
+        packed with health benefits. Muliple studies demonstrate hat drinking tea can boost the immmunine system, reduce
+        inflammation, and even protect the human body from certain diseases such as cancer and heart disease.
+        Although some teas offer more health benefits than others, regular tea consumption can improve your overall
+        health.
+        <br>
+        <a href="https://www.pennmedicine.org/updates/blogs/health-and-wellness/2019/december/health-benefits-of-tea"
+            target="_blank" class="learn">
+            <strong>Read more here</strong>
+        </a>
+    </p>
+    <button class="buyButton">
+        TRY THIS TEA
+    </button>
+    <h3>
+        Coded by Dorcas Muzuri
+    </h3>
+
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let tea = prompt("What is your favourite type of tea?");
+            alert("Thank you " + name + "! We'll be in touch by email, meanwhile drink lots of Tea today! ");
+        }
+        let buyButton = document.querySelector(".buyButton");
+        buyButton.addEventListener("click", buy)
+    </script>
+</body>
+
+</html>
